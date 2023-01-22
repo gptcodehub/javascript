@@ -1,0 +1,24 @@
+
+let originalString = "Hello, World!";
+let reversedString = originalString.split('').reverse().join('');
+console.log(reversedString); // Output: "!dlroW ,olleH"
+
+
+########################################
+
+
+
+let originalString = "Hello, World!";
+let reversedString = "";
+for (let i = originalString.length - 1; i >= 0; i--) {
+    reversedString += originalString[i];
+}
+console.log(reversedString); // Output: "!dlroW ,olleH"
+
+
+########################################
+
+
+let originalString = "Hello, World!";
+let reversedString = [...originalString].reduce((a, b) => b + a);
+console.log(reversedString);
